@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: synthetic-generator
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+generator:
+  topic: transactions.in
+  rate:
+    events-per-second: 500
+  fraud:
+    overall-rate-percent: 3.5
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
