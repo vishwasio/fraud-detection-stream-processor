@@ -1,0 +1,35 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/*
+mvnw
+mvnw.cmd
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+
+# Temporary
+*.tmp
+
+# Docker
+docker-data/
+kafka-data/
+
+# Generated Jars
+*.jar
+*.jar.original
