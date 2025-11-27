@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: fraud-stream-processor
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+
+kafka:
+  topic:
+    in: transactions.in
+    out: transactions.out
+
+rule-engine:
+  base-url: ${RULE_ENGINE_BASE:http://localhost:8091}
+
+logging:
+  level:
+    com.fdp.processor: INFO
