@@ -1,0 +1,20 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: alert-service
+
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      group-id: alert-service
+      auto-offset-reset: earliest
+
+alert:
+  kafka:
+    input-topic: transactions.out
+
+logging:
+  level:
+    com.fdp: INFO
