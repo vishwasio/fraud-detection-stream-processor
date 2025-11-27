@@ -1,0 +1,43 @@
+server:
+  port: 8091
+
+spring:
+  profiles:
+    active: default
+  application:
+    name: fraud-rule-engine
+
+fraud:
+  engine:
+    threshold: 50.0           
+    aggregate-mode: sum
+
+    rules:
+      DeviceChangeSuspiciousRule:
+        enabled: true
+        weight: 1.5
+      GeoVelocityRule:
+        enabled: true
+        weight: 2.0
+      RapidFireTransactionsRule:
+        enabled: true
+        weight: 2.0
+      SuddenAmountSpikeRule:
+        enabled: true
+        weight: 1.8
+      NightOutSpendingRule:
+        enabled: true
+        weight: 1.2
+      MCCRiskScoreRule:
+        enabled: true
+        weight: 1.0
+
+caffeine:
+  small-window-minutes: 10
+  rapid-fire-window-seconds: 30
+  rapid-fire-threshold: 5
+  running-amount-size: 10
+
+logging:
+  level:
+    com.fdp: INFO
