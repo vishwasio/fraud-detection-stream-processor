@@ -9,15 +9,14 @@
 </p>
 
 <p align="center">
-  <strong>A modular, real-time FinTech Fraud Detection Service built using Kafka Streams, Rule Engine, Synthetic Data Generator and Event-driven Microservices.</strong>
+  <strong>A modular, real-time FinTech Fraud Detection Service built using Kafka Streams, Rule Engine, Synthetic Data Generator and Event-driven Microservices, over a Modular Monolith Architecture.</strong>
 </p>
 
 ---
 
 ## 🚀 Overview
 
-The **Fraud Detection Stream Processor** is a modular, event-driven FinTech system designed to efficiently analyze high-volume transactional data in real time.  
-It provides a scalable and extensible foundation for building fraud-analysis pipelines commonly used in modern payment processing platforms.
+The **Fraud Detection Stream Processor** is a modular, event-driven FinTech system designed to efficiently analyze high-volume transactional data in real time. It provides a scalable and extensible foundation for building fraud-analysis pipelines commonly used in modern payment processing platforms.
 
 This system is capable of:
 
@@ -34,8 +33,7 @@ Built with a focus on clarity, maintainability, and production alignment, the pr
 
 ## 🚚 Migration Notes
 
-This repository is a **clean, intentionally refactored migration** of an older codebase that has since been deprecated and deleted.  
-The migration was intentional and performed to achieve:
+This repository is a **clean, intentionally refactored migration** of an older codebase that has since been deprecated and deleted. The migration was intentional and performed to achieve:
 
 - Improved overall architecture and code readability
 - Removal of outdated or experimental components
